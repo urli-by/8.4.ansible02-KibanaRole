@@ -2,7 +2,7 @@
 - name: Install Kibana
   become: true
   apt:
-    deb: "/tmp/kibana-{{ kibana_version }}-x86_64.rpm"
+    deb: "/tmp/kibana-{{ kibana_version }}-amd64.deb"
     state: present
-  notify: restart Kibana
+  notify: restart kibana
   
